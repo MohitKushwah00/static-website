@@ -6,12 +6,7 @@ pipeline {
         DOCKERHUB_USER = "7696141945"  // Replace with your DockerHub username if needed
     }
 
-    stages {
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/MohitKushwah00/static-website.git'
-            }
-        }
+  
 
         stage('Build Docker Image') {
             steps {
