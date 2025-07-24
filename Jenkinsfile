@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/MohitKushwah00/static-website.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
